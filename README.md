@@ -11,7 +11,7 @@ GENEPI-BOX
 
 ### Installation
 Clone the genepi-box repository to your system using ```git clone https://github.com/banijolly/genepi-box.git ```
-To use conda, download and install the [latest version of Anaconda](https://www.anaconda.com/distribution/).
+<br>To use conda, download and install the [latest version of Anaconda](https://www.anaconda.com/distribution/).
 
 Create and activate the genepi-box conda environment:
 ```bash
