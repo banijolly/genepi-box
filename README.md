@@ -19,6 +19,8 @@ The tool will output a summary report for the analysis, including:<br>
 - Creating an interactive chart for visualizing lineage prevalences in the samples over time<br>
 After installation, the tool can be opened as a web-page on the user's system
 
+<b>The tool will work on a workstation/server with 64 bit Linux-based operating system, and has been validated on Ubuntu (16.04 LTS) Linux Distribution.</b>
+
 ## Quickstart
 
 ### Requirements
@@ -27,12 +29,10 @@ After installation, the tool can be opened as a web-page on the user's system
 
 ### Installation
 Clone the genepi-box repository to your system using ```git clone https://github.com/banijolly/genepi-box.git ```
-<br>To use conda, download and install the [latest version of Anaconda](https://www.anaconda.com/distribution/).
+<br>To use conda, download and install the [latest version of Anaconda](https://www.anaconda.com/distribution/) to the home directory of your system.
 
-Create and activate the genepi-box conda environment:
-```bash
-conda env create -f environment.yml
-conda activate covid19-genepi
+The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
+```./setup.sh
 ```
 
 ## About the Protocol
