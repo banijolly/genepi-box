@@ -24,4 +24,4 @@ The **Computational Protocol for Assembly and Analysis of SARS-nCoV-2 Genomes** 
 
 This README document illustrates the prerequisites and installations steps required to run the pipeline for paired-end samples. For a detailed description of the steps involved in this protocol along with the commands used, please read the [Analysis Steps](https://github.com/banijolly/Genepi/blob/master/Analysis_Steps.md) document.
 
-More information about the lab and our work on COVID-19 can be found at the [lab website](http://vinodscaria.rnabiology.org/).
+More information about the lab and our work on COVID-19 can be found at the [lab website](http://vinodscaria.genomes.in/).
