@@ -3,7 +3,7 @@
 </p>
 
 ## About
-<b>Gen</b>omic <b>Epi</b>demiology in a <b>Box</b><br> 
+<b>Gen</b>etic <b>Epi</b>demiology in a <b>Box</b><br> 
 genepi-box is a tool developed for automating genome assembly and analysis of SARS-CoV-2 genomes to aid epidemiology and surveillance.<br>
 <br>
 The tool takes in as input:<br>
