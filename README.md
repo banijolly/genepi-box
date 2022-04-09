@@ -6,15 +6,24 @@
 <b>Gen</b>omic <b>Epi</b>demiology in a <b>Box</b><br> 
 genepi-box is a tool developed for automating genome assembly and analysis of SARS-CoV-2 genomes to aid epidemiology and surveillance.<br>
 <br>
-The tool takes in as input a zipped file for paired-end short read sequencing data files (FASTQ files) of SARS-CoV-2 and will output summary report of the analysis, including:<br>
+The tool takes in as input:<br>
+- A zip file (in .zip format) for paired-end short read sequencing data files (FASTQ files) of SARS-CoV-2 samples <br>
+- The sample sheet used for demultiplexing the sequencing run from BCL to FASTQ files (in .csv format)
+- A metadata file containing details of the samples (a tab separated text file)
+- A configuration file (text format) to set the options for running the analysis. A default configuration file (config.txt) is available in the repository and can be edited to set run parameters to 'on' or 'off'
+
+The tool will output a summary report for the analysis, including:<br>
 - Detecting mutations<br>
 - Assignment of lineages to the samples using [Pangolin](https://cov-lineages.org/resources/pangolin.html)<br>
 - Generating a phylogentic build for the samples using [Nextstrain](https://nextstrain.org/sars-cov-2/) <br>
 - Creating an interactive chart for visualizing lineage prevalences in the samples over time<br>
+After installation, the tool can be opened as a web-page on the user's system
 
 ## Quickstart
 
 ### Requirements
+- git
+- anaconda
 
 ### Installation
 Clone the genepi-box repository to your system using ```git clone https://github.com/banijolly/genepi-box.git ```
