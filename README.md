@@ -37,7 +37,7 @@ The tool can be installed by running the setup.sh installation script given in t
 After successfull installation, the tool may be run by executing the command:
 ``` ./start.sh ```
 This will initiate a local web-server on your system.
-To open the tool interface, navigate to [localhost:2000](localhost:2000) on a web browser.
+To open the tool interface, navigate to http://localhost:2000 on a web browser.
 
 
 ## About the Protocol
