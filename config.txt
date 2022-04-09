@@ -1,0 +1,15 @@
+## This is the configuration file in which we define which additional analysis to run on the uploaded data.
+## The user of this tool may set the analysis to be run by setting the option to 'on' or 'off' in this file. The default option in 'on'.
+
+## Running Phylogenetic build for the samples using Nextstrain
+
+nextstrain=on
+buildName=Maldives-nCoV
+
+## Submit sequences to GISAID automatically after pipeline finishes running. If this option is set to 'on', please specify the client-ID, username and password for the GISAID account to be used for the upload. 
+## This option will require authenticating connection with the GISAID server. The authentication token generated is specific to a client-ID, username and password combination. To obtain a client-ID for your GISAID account, email clisupport[at]gisaid.org.
+
+gisaid=on
+client-ID=TEST-EA76875B00C3
+username=banijolly
+password=Bani@2021

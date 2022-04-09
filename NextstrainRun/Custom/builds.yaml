@@ -1,0 +1,26 @@
+# This is where we define which builds we'd like to run.
+# This example includes 4 separate builds, ranging from the regional (global) to location (county) level.
+# You can comment-out, remove, or add as many builds as you'd like.
+
+# Each build needs a name, a defined subsampling process, and geographic attributes used for subsampling.
+# Geography is specified by build attributes (e.g., `region`, `country`, `division`, `location`) that are referenced from subsampling schemes.
+
+# The default config file, `./defaults/parameters.yaml` has reasonable default subsampling methods for each geographic resolution.
+# These subsample primarily from the area of interest ("focus"), and add in background ("contextual") sequences from the rest of the world.
+# Contextual sequences that are genetically similar to (hamming distance) and geographically near the focal sequences are heavily prioritized.
+
+# In this example, we use these default methods. See other templates for examples of how to customize this subsampling scheme.
+
+# Define input files.
+
+inputs:
+  - name: EXAMPLEBUILDNAME
+    metadata: data/metadata.tsv
+    sequences: data/sequences.fasta
+
+builds:
+  Maldives-nCoV: # name of the build; this can be anything
+    subsampling_scheme: Country # use a custom subsampling scheme defined below
+    region: Asia
+files:  
+    description: my_profiles/example/description.md

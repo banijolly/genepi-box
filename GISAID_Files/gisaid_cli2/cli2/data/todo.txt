@@ -1,0 +1,15 @@
+When uploading with invalid submitter ("yourusername"), the upload does a duplicate check before username check.
+Also, if a sequence is missing (present in metadata but not in sequence file), the missing seq triggers the sumbitter invalid down the track
+
+missing_seq:    hCoV-19/x/x390/2021
+validation_error:       hCoV-19/Anzark/12/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/13/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/17/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/16/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/17/2021; validation_error; {"covv_virus_name": "already exists"}
+upload_error:   hCoV-19/x/x390/2021; submitter_invalid
+validation_error:       hCoV-19/Anzark/Melbourne476/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/Melbourne477/2021; validation_error; {"covv_virus_name": "already exists"}
+validation_error:       hCoV-19/Anzark/Melbourne475/2021; validation_error; {"covv_virus_name": "already exists"}
+upload_count:   submissions uploaded: 0
+failed_count:   submissions failed: 9
