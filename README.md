@@ -34,7 +34,7 @@ Clone the genepi-box repository to your system using ```git clone https://github
 The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
 ``` ./setup.sh ```
 
-After successfull installation, the tool may be run by executing the command:
+After successful installation, the tool may be run by executing the command:
 ``` ./start.sh ```
 This will initiate a local web-server on your system.
 To open the tool interface, navigate to http://localhost:2000 on a web browser.
