@@ -3,7 +3,8 @@
 </p>
 
 ## About
-GENEPI-BOX
+<b>Gen</b>omic <b>Epi</b>demiology in a <b>Box</b> 
+genepi-box is a tool for automating the analysis
 
 ## Quickstart
 
