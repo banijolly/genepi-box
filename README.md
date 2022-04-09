@@ -8,8 +8,8 @@ genepi-box is a tool developed for automating genome assembly and analysis of SA
 <br>
 The tool takes in as input a zipped file for paired-end short read sequencing data files (FASTQ files) of SARS-CoV-2 and will output summary report of the analysis, including:<br>
 - Detecting mutations<br>
-- Assignment of lineages to the samples using [Pangolin] (https://cov-lineages.org/resources/pangolin.html)<br>
-- Generating a phylogentic build for the samples using [Nextstrain] (https://nextstrain.org/sars-cov-2/)<br>
+- Assignment of lineages to the samples using [Pangolin](https://cov-lineages.org/resources/pangolin.html)<br>
+- Generating a phylogentic build for the samples using [Nextstrain](https://nextstrain.org/sars-cov-2/) <br>
 - Creating an interactive chart for visualizing lineage prevalences in the samples over time<br>
 
 ## Quickstart
