@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ../GISAID_Files
-echo "Formatting Data for GISAID Submission"  >> ../../LOGFILE.now
+echo "Formatting Data for GISAID Submission"  >> ../LOGFILE.now
 cat ../uploads/Metadata_input.tsv | grep -v "Virus name" | awk -F"\t" '{print ">"$1":>"$15"_consensus"}' > .change
 
 uname=$(cat ../config.txt  | grep -v "#" | grep  username | cut -d "=" -f2)
