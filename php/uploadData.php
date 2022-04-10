@@ -92,7 +92,7 @@
 					}
 					}
 					chdir("../uploads/");
-					$output1 =  shell_exec('unzip -o Fastq_1.zip');
+					$output1 =  shell_exec('unzip -j Fastq_1.zip -d Fastq_1');
 
 					chdir("../");
 					$output2 =  shell_exec('pwd');

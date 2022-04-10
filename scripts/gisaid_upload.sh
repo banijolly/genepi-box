@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ------------------------------------------------------------------
-echo "Preparing GISAID Submissions"  >> ../LOGFILE.now
+echo "Preparing GISAID Submissions"  >> LOGFILE.now
 echo ------------------------------------------------------------------
 
 

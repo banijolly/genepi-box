@@ -88,7 +88,7 @@ do
 	echo "Using Trimmomatic to trim low quality bases for "$i >> ../LOGFILE.now
 	echo ------------------------------------------------------------------ >> ../LOGFILE.now
 
-	TRIM_COMMAND_PE="trimmomatic PE $r1 $r2 Trimmed_output_"$OUT"/"$i"_fwd_paired.fastq.gz Trimmed_output_"$OUT"/"$i"_fwd_unpaired.fastq.gz Trimmed_output_"$OUT"/"$i"_rev_paired.fastq.gz Trimmed_output_"$OUT"/"$i"_rev_unpaired.fastq.gz ILLUMINACLIP:"$HOME"/anaconda3/envs/covid19-genepi/share/trimmomatic/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:30 MINLEN:35"	
+	TRIM_COMMAND_PE="trimmomatic PE $r1 $r2 Trimmed_output_"$OUT"/"$i"_fwd_paired.fastq.gz Trimmed_output_"$OUT"/"$i"_fwd_unpaired.fastq.gz Trimmed_output_"$OUT"/"$i"_rev_paired.fastq.gz Trimmed_output_"$OUT"/"$i"_rev_unpaired.fastq.gz ILLUMINACLIP:"$HOME"/anaconda3/envs/genepi-box/share/trimmomatic/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:30 MINLEN:35"	
 	echo $TRIM_COMMAND_PE
 	eval "$TRIM_COMMAND_PE"
 

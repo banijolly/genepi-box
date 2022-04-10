@@ -1,13 +1,17 @@
 #!/bin/bash
 rm uploads/*zip
-
 rm LOGFILE.now
+rm .status
+printf "Analysis is running <img height='10%%' src='../images/loading.gif'>\n" > .status
 touch LOGFILE.now
+
 printf "#!/bin/bash\n" > run.sh
 printf "cd GenomeAssembly\n" >> run.sh
 printf "./assemblyPipeline.sh -d ../uploads/Fastq_1/ -s ../uploads/SampleSheet.csv -m ../uploads/Metadata_input.tsv -r resources/NC_045512.2.fasta\n" >> run.sh
-
 printf "cd ../\n" >> run.sh
+
+printf "./scripts/lineagetracker_metacombine.sh\n" >> run.sh
+
 
 
 ns=$(cat config.txt | grep -v "##" | grep nextstrain| cut -d "=" -f2 )
@@ -64,8 +68,10 @@ else
 fi
 fi
 
-printf "./scripts/checkStatus.sh "$ns" "$gsd"\n" >> run.sh
+printf "ts=\$(ls -1 GenomeAssembly/ | grep PANGO  | cut -d '_' -f3)\n" >> run.sh
 
+printf "./scripts/compileFiles.sh \$ts \n" >> run.sh
+printf "./scripts/checkStatus.sh "$ns" "$gsd" \$ts\n" >> run.sh
 
 chmod +x run.sh
 ./run.sh

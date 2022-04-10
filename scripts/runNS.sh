@@ -10,13 +10,8 @@ cd "ns_ncov_"$(date +%Y-%m-%d)
 cp ../../MasterFiles/nextstrain-metadata_master.tsv data/metadata.tsv
 cat ../../MasterFiles/nextstrain-reference.fasta ../../MasterFiles/sequences_master.fasta > data/sequences.fasta
 
-sed -i "s/EXAMPLEBUILDNAME/$build/g" ../Custom/builds.yaml
-cp ../Custom/builds.yaml my_profiles/example/builds.yaml 
+cat ../Custom/builds.yaml | sed "s/EXAMPLEBUILDNAME/$build/g" >  my_profiles/example/builds.yaml
 cp ../Custom/description.md my_profiles/example/
 snakemake --profile my_profiles/example -p
 
 echo "Nextstrain Run completed" $1 >> ../../LOGFILE.now
-
-
-
-
