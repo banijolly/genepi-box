@@ -3,8 +3,6 @@ echo "Setting up analysis environment"
 
 conda install  -n base -c conda-forge mamba --yes
 
-wget https://raw.githubusercontent.com/banijolly/genepi-box/main/environment.yml
-
 mamba env create -f environment.yml
 
 source ~/anaconda3/etc/profile.d/conda.sh
