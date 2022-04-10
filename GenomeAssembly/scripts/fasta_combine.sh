@@ -1,7 +1,7 @@
 #!/bin/bash
-echo ------------------------------------------------------------------ >> ../../LOGFILE.now
-echo "Combining all FASTA Files and storing output in Combined_Fasta_sequences.fasta" >> ../../LOGFILE.now
-echo ------------------------------------------------------------------  >> ../../LOGFILE.now
+echo ------------------------------------------------------------------ >> ../LOGFILE.now
+echo "Combining all FASTA Files and storing output in Combined_Fasta_sequences.fasta" >> ../LOGFILE.now
+echo ------------------------------------------------------------------  >> ../LOGFILE.now
 
 mkdir FASTAS
 
