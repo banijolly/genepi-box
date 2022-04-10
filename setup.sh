@@ -17,6 +17,7 @@ rm -rf pangolin
 
 cd GISAID_Files
 pip install --user ./gisaid_cli2
+cp ~/.local/bin/cli2 ~/anaconda3/envs/genepi-box/bin/
 
 cd ..
 cp scripts/php.ini ~/anaconda3/envs/genepi-box/lib/php/
