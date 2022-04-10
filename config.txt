@@ -4,12 +4,12 @@
 ## Running Phylogenetic build for the samples using Nextstrain
 
 nextstrain=on
-buildName=Maldives-nCoV
+buildName=ADD_BUILDNAME_HERE
 
 ## Submit sequences to GISAID automatically after pipeline finishes running. If this option is set to 'on', please specify the client-ID, username and password for the GISAID account to be used for the upload. 
 ## This option will require authenticating connection with the GISAID server. The authentication token generated is specific to a client-ID, username and password combination. To obtain a client-ID for your GISAID account, email clisupport[at]gisaid.org.
 
 gisaid=on
 client-ID=TEST-EA76875B00C3
-username=banijolly
-password=Bani@2021
+username=ADD_USERNAME_HERE
+password=ADD_PASSWORD_HERE
