@@ -64,7 +64,7 @@ else
 fi
 fi
 
-printf "./scripts/checkStatus.sh "$ns"\n" >> run.sh
+printf "./scripts/checkStatus.sh "$ns" "$gsd"\n" >> run.sh
 
 
 chmod +x run.sh
