@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Updating Master data files"  >> ../../LOGFILE.now
+echo "Updating Master data files"  >> ../LOGFILE.now
 cat SampleSummary.txt | grep -v "Sample ID" |  awk -F"\t" '{print $1"\t"$15"\t"$14"\t"$14"\t"$13}' >> ../MasterFiles/metadata-master.tsv
 
 cat Combined_Fasta_sequences.fasta >> ../MasterFiles/sequences_master.fasta
