@@ -8,7 +8,7 @@ gsdMeta=$(ls -1 $outFolder/GISAID_Files/Epi*Metadata.csv)
 gsdFasta=$(ls -1 $outFolder/GISAID_Files/Epi*fasta)
 nsDir=$(ls -1 $outFolder/Nextstrain_Files)
 
-printf "<b>The pipeline has finished running. Please check the log file to know the status of the run.</b><br>Download Output Files:<br><a href='../LOGFILE.now' download ><u>Run Log</u></a>  /  <a href='../"$outFolder"/run.log' download ><u>Detailed Run Log</u></a><br><a href='../"$outFolder"/GenomeAssembly_Files/SampleSummary.txt' download><u>Analysis Summary File</u></a><br><a href='../"$outFolder"/GenomeAssembly_Files/Combined_Fasta_sequences.fasta' download><u>Combined FASTA Sequences File</u></a><br>" > .status
+printf "<b>The pipeline has finished running. Please check the log file to know the status of the run.</b><br>Download Output Files:<br><a href='../LOGFILE.now' download ><u>Run Log</u></a>  /  <a href='../"$outFolder"/run.log' download ><u>Detailed Run Log</u></a><br><a href='../"$outFolder"/GenomeAssembly_Files/SampleSummary.txt' download><u>Analysis Summary File</u></a><br><a href='../"$outFolder"/GenomeAssembly_Files/Combined_Fasta_sequences.fasta' download><u>Combined FASTA Sequences File</u></a><br><br><a href='http://localhost:2000/lineageTracker.html' target='_blank'> <u> Click here to view Lineage Tracker</u><br>" > .status
 
 if [[ $ns == "on" ]] && [[ $gsd == "on" ]]
 then
@@ -24,3 +24,4 @@ then
 else
 	printf "" >> .status
 fi
+

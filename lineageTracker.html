@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQ5M9GG');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-19V7XVVF3L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-19V7XVVF3L');
+</script>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GENEPI-Box Genomic Surveillance</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="canonical" href="https://clingen.igib.res.in/covid19genomes/"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/css/bootstrap-4.1.3.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/css/mdb-4.19.2.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/css/magicsuggest.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,700&display=swap">
+    <link href="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body ng-app="myApp" ng-controller="INSACOGdata">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<script type='text/javascript'>
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup').show();
+$('.close').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+
+ 
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ5M9GG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="card card-cascade wider reverse">
+      <div class="view view-cascade overlay insacog-header" style="background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(95,129,235,1) 39%, rgba(135,92,240,1) 52%, rgba(255,56,97,1) 120%);">
+         <div class="mask rgba-white-slight d-flex">
+            <img src="trackerlogo2.png" class="igiblogo h-100">
+
+          </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body card-body-cascade text-center w-100 white">
+                    <h6 class="card-title text-left"><b>Pango Lineage </b></h6>
+                    <div class="bs-example text-left">
+                    <div id="ms1" class="form-control"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="lineage-card">
+                    <p class="px-3 pt-3 mb-0 font-weight-bold">
+                        <span class="stateName"></span>
+                    </p>
+
+                    <figure class="highcharts-figure lineage-chart py-5">
+                        <div id="lineageschart"></div>
+                        <!-- <div id="container"></div> -->
+                    </figure>
+                    <div class="loadfile text-center" ng-if="loading == true">
+                        <div class="loader">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/popper.min.js"></script>
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.6/angular-filter.js"></script>
+    <script src="https://mdbootstrap.com/previews/templates/admin-dashboard/js/mdb.min.js"></script>
+
+    <!-- map start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <!-- <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script> -->
+     <!--<script src="INSACOG/insacog-assets/js/geoJSON.js"></script>-->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/geoJSONnew.js"></script>
+
+    <!-- <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script> -->
+
+
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <script src='php/js/script.js'></script>
+
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://clingen.igib.res.in/covid19genomes/INSACOG/insacog-assets/js/magicsuggest.js"></script>
+
+</body>
+</html>
+                  
