@@ -9,8 +9,8 @@ genepi-box is a tool developed for automating genome assembly and analysis of SA
 The tool takes in as input:<br>
 - A zip file (in .zip format) for paired-end short read sequencing data files (FASTQ files) of SARS-CoV-2 samples <br>
 - The sample sheet used for demultiplexing the sequencing run from BCL to FASTQ files (in .csv format)
-- A metadata file containing details of the samples (a tab separated text file)
-- A configuration file (text format) to set the options for running the analysis. A default configuration file (config.txt) is available in the repository and can be edited to set run parameters to 'on' or 'off'
+- A metadata file containing details of the samples (a tab separated text file). A sample metadata file ([Metadata_Sample.tsv](https://github.com/banijolly/genepi-box/blob/main/Metadata_Sample.tsv)) is available in the repository. The header of the file (the first row) should remain the same. Second row of the sample metadata file contains examples of what values can be entered, this row can be deleted while adding new data. User can add their own data to the subsequent rows.
+- A configuration file (text format) to set the options for running the analysis. A default configuration file ([config.txt](https://github.com/banijolly/genepi-box/blob/main/config.txt)) is available in the repository and can be edited to set run parameters to 'on' or 'off'
 
 The tool will output a summary report for the analysis, including:<br>
 - Detecting mutations<br>
