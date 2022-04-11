@@ -37,6 +37,7 @@ Navigate into the cloned directory on your system:
 The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
 ``` ./setup.sh ```
 
+### Running
 To activate the conda environment, run:
 ``` conda activate genepi-box ```
 
