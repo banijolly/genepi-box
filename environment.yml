@@ -32,7 +32,7 @@ dependencies:
   - git
   - zip
   - php
-  - r
+  - r-essentials
   - pip:
     - git+https://github.com/cov-lineages/pangoLEARN.git
     - git+https://github.com/cov-lineages/scorpio.git
