@@ -46,7 +46,7 @@ After successful installation, the tool may be run by executing the command:
 ``` ./start.sh ```
 
 This will initiate a local web-server on your system.
-To open the tool interface, open the link  http://localhost:2000 on a web browser. The tool is best suited to view on Google Chrome.
+To open the tool interface, open the link  http://localhost:2000 on a web browser. The web-page is best suited to view on Google Chrome.
 
 
 ## About the Protocol
