@@ -28,7 +28,7 @@ dependencies:
   - auspice
   - nextalign
   - snakemake
-  - nextclade
+  - nextclade=2.4
   - git
   - zip
   - php
