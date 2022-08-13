@@ -3,6 +3,8 @@ ns=$1
 gsd=$2
 ts=$3
 outFolder="RunFiles/Run_"$ts
+pidAuspice=$(lsof -i :4000 | grep -o "[0-9].*" | cut -d " " -f1)
+kill $pidAuspice
 
 gsdMeta=$(ls -1 $outFolder/GISAID_Files/Epi*Metadata.csv)
 gsdFasta=$(ls -1 $outFolder/GISAID_Files/Epi*fasta)
