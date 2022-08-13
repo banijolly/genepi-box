@@ -31,19 +31,45 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+				<form class="login100-form validate-form flex-sb flex-w" action="php/uploadData.php" method="post" enctype="multipart/form-data" >
 					<span class="login100-form-title p-b-40">
 						<img src="logo.png" class="logo-image">
 					</span>
 					<span class="login100-form-title p-b-40">
 						Genetic Epidemiology in a Box
 					</span>
-                    <div class="p-t-13 p-b-9 container-login100-form-btn">
-						<span onclick='location.href="fastqUpload.html"' class="login100-form-btn">Upload FASTQ file</span>
+					<div class="p-t-20 p-b-9 validate-input" data-validate = "Please select a file">
+						<div id="upload">
+							<p >Upload sequencing run folder</p>
+						</div>
+						<input type="file" name="folderInput" id="folderInput" class="fileInput" />
 					</div>
-					<div class="p-t-13 p-b-9 container-login100-form-btn">
-						<span onclick='location.href="fastaUpload.html"' class="login100-form-btn">Upload FASTA file</span>
+					<div class="p-t-20 p-b-9 validate-input" data-validate = "Please select a file">
+						<div id="upload">
+							<p >Upload configuration file</p>
+						</div>
+						<input type="file" name="config" id="config" class="fileInput" />
+					</div>
+					<div class="p-t-20 p-b-9 validate-input" data-validate = "Please select a file">
+						<div id="upload">
+							<p >Upload Sample Sheet</p>
+						</div>
+						<input type="file" name="sampleSheet" id="sampleSheet" class="fileInput" />
+					</div>
+					<div class="p-t-20 p-b-9 validate-input" data-validate = "Please select a file">
+						<div id="upload">
+							<p >Upload Metadata</p>
+						</div>
+						<input type="file" name="metadata" id="metadata" class="fileInput" />
 					</div>
 					
+					<div class="container-login100-form-btn m-t-17">
+						<input class="login100-form-btn" type="submit" value="Submit" name="submit">
+					</div>
+					<div class="p-t-10 p-l-12 p-r-12" style="align-items: center; margin: auto;">
+					<a href="index.html"><img src="images/icons/favicon.ico" width ="60%" > </a>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

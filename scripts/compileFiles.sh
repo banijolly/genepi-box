@@ -8,11 +8,10 @@ gsdMeta=$(ls -1 GISAID_Files/Epi*Metadata*csv)
 gsdFasta=$(ls -1 GISAID_Files/Epi*fasta)
 
 
-mv GenomeAssembly/*_output_* GenomeAssembly/*txt GenomeAssembly/*fasta GenomeAssembly/SAMPLE_IDs GenomeAssembly/PANGO_reports_* GenomeAssembly/Picard_metrics_* "RunFiles/Run_"$ts"/GenomeAssembly_Files"
+mv GenomeAssembly/*_output_* GenomeAssembly/*txt GenomeAssembly/*fasta GenomeAssembly/SAMPLE_IDs GenomeAssembly/PANGO* GenomeAssembly/Picard_metrics_* "RunFiles/Run_"$ts"/GenomeAssembly_Files"
 
-
+mv NextstrainRun/NextCladeOutput/nextclade.tsv   "RunFiles/Run_"$ts"/Nextstrain_Files"
 mv NextstrainRun/ns_ncov_* "RunFiles/Run_"$ts"/Nextstrain_Files"
-
 mv GISAID_Files/.change "RunFiles/Run_"$ts"/GISAID_Files"
 mv GISAID_Files/Combined_Fasta_sequences.fasta "RunFiles/Run_"$ts"/GISAID_Files"
 mv "$gsdFasta" "RunFiles/Run_"$ts"/GISAID_Files"

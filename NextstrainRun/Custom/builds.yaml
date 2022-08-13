@@ -21,6 +21,5 @@ inputs:
 builds:
   Maldives-nCoV: # name of the build; this can be anything
     subsampling_scheme: Country # use a custom subsampling scheme defined below
-    region: Asia
 files:  
     description: my_profiles/example/description.md
