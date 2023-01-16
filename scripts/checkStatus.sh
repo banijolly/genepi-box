@@ -6,11 +6,13 @@ outFolder="RunFiles/Run_"$ts
 pidAuspice=$(lsof -i :4000 | grep -o "[0-9].*" | cut -d " " -f1)
 kill $pidAuspice
 
+summFile=$(ls -1 $outFolder/GenomeAssembly_Files/SampleSummary.txt)
 gsdMeta=$(ls -1 $outFolder/GISAID_Files/Epi*Metadata.csv)
 gsdFasta=$(ls -1 $outFolder/GISAID_Files/Epi*fasta)
 nsDir=$(ls -1 $outFolder/Nextstrain_Files | grep -v clade)
 ncFile=$(ls -1 $outFolder/Nextstrain_Files/nextclade.tsv)
-printf "<b>The pipeline has finished running. Please check the log file to know the status of the run.</b><br>Download Output Files:<br><a href='../LOGFILE.now' download ><u>Run Log</u></a>  /  <a href='../"$outFolder"/run.log' download ><u>Detailed Run Log</u></a><br><br><br><a href='http://localhost:2000/lineageTracker.html' target='_blank'> <u> Click here to view Lineage Tracker</u><br>" > .status
+printf "<b>The pipeline has finished running. Please check the log file to know the status of the run.</b><br>Download Output Files:<br><a href='../LOGFILE.now' download ><u>Run Log</u></a>  /  <a href='../"$outFolder"/run.log' download ><u>Detailed Run Log</u></a><br><br><br>
+<a href='../"$summFile"' download><u>Analysis Run Summary File</u></a><br><a href='http://localhost:2000/lineageTracker.html' target='_blank'> <u> Click here to view Lineage Tracker</u><br>" > .status
 
 if [[ $ns == "on" ]] && [[ $gsd == "on" ]]
 then
