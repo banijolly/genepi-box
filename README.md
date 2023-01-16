@@ -36,11 +36,12 @@ Navigate into the cloned directory on your system:
 
 The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
 
-For Anaconda:
+<b>For Anaconda:</b>
 
 ``` ./setup.sh ```
 
-For Miniconda:
+<b>For Miniconda:</b>
+
 ``` ./setup_miniconda.sh ```
 
 ### Running
