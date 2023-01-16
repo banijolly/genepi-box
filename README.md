@@ -25,17 +25,22 @@ After installation, the tool can be opened as a web-page on the user's system
 
 ### Requirements
 - git
-- anaconda
+- anaconda or miniconda
 
 ### Installation
 Clone the genepi-box repository to your system using ```git clone https://github.com/banijolly/genepi-box.git ```
-To use conda, download and install the [latest version of Anaconda](https://www.anaconda.com/distribution/) to the <b>home directory of your system.</b>
+To use conda, download and install the latest version of [Anaconda](https://www.anaconda.com/distribution/) or [Miniconda](https://docs.conda.io/en/main/miniconda.html) to the <b>home directory of your system.</b>
 
 Navigate into the cloned directory on your system:
 ``` cd genepi-box ```
 
 The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
+For Anaconda:
+
 ``` ./setup.sh ```
+
+For Miniconda:
+``` ./setup_miniconda.sh ```
 
 ### Running
 To activate the conda environment, run:
