@@ -35,6 +35,7 @@ Navigate into the cloned directory on your system:
 ``` cd genepi-box ```
 
 The tool can be installed by running the setup.sh installation script given in the repository. To install, run the following command:
+
 For Anaconda:
 
 ``` ./setup.sh ```
