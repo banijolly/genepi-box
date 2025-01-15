@@ -3,7 +3,7 @@
 </p>
 
 ## About
-<b>Gen</b>etic <b>Epi</b>demiology in a <b>Box</b><br> <img width="3" src="https://media3.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif?cid=6c09b952uxikmjvl2ir5kx48r2hi8d4skyrvaocna7kdp5lq&ep=v1_internal_gif_by_id&rid=giphy.gif">
+<b>Gen</b>etic <b>Epi</b>demiology in a <b>Box</b><br> <img width="30" src="https://media3.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif?cid=6c09b952uxikmjvl2ir5kx48r2hi8d4skyrvaocna7kdp5lq&ep=v1_internal_gif_by_id&rid=giphy.gif">
 genepi-box is a tool developed for automating genome assembly and analysis of SARS-CoV-2 genomes to aid epidemiology and surveillance.<br>
 <br>
 The tool takes in as input:<br>
